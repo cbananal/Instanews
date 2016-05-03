@@ -39,11 +39,6 @@ $(document).ready(function(){
         }).splice (0,12);
       } // end if/else statement
 
-      // nytData = nytData.filter(function (item){
-      //   return item.multimedia.length > 0;
-      //   }).splice (0,12);
-
-
       for (var i = 0; i < nytData.length; i++) {
           var featuredPhoto = nytData[i].multimedia[4].url;
           var newsAbstract = nytData[i].abstract;

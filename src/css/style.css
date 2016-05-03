@@ -119,7 +119,6 @@ body a{
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*background-color: green;*/
 }
 
 .shrink {
@@ -133,7 +132,6 @@ body a{
 
 .logo, .dropdown-area {
   width: auto;
-  /*background-color: orange;*/
 }
 
 .logo img {
