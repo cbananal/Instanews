@@ -38,7 +38,7 @@ $(document).ready(function(){
           var newsAbstract = nytData[i].abstract;
           var linkToFull = nytData[i].url;
 
-          $('.news-container').append('<li class="outer-square" style="background-image: url(\'' + featuredPhoto + '\');"><a class="inner-square" href="' + linkToFull + '"><p>' + newsAbstract + '</p></a></li>');
+          $('.news-container').append('<li class="outer-square" style="background-image: url(\'' + featuredPhoto + '\');"><a class="inner-square" href="' + linkToFull + '" target="_blank"><p>' + newsAbstract + '</p></a></li>');
 
           console.log(featuredPhoto);
           // console.log(newsAbstract);
