@@ -33,14 +33,13 @@ $(document).ready(function(){
         }).splice (0,12);
 
       for (var i = 0; i < nytData.length; i++) {
-          var featuredPhoto = nytData[i].multimedia[2].url;
+          var featuredPhoto = nytData[i].multimedia[4].url;
           var newsAbstract = nytData[i].abstract;
           var linkToFull = nytData[i].url;
 
-          $('.news-container').append('<li><a href="' + linkToFull + '"><p>' + newsAbstract + '</p></a></li>');
-          // $('li').parent('.news-container').addcss
+          $('.news-container').append('<li class="outer-square" style="background-image: url(\'' + featuredPhoto + '\');"><a class="inner-square" href="' + linkToFull + '"><p>' + newsAbstract + '</p></a></li>');
 
-          // console.log(featuredPhoto);
+          console.log(featuredPhoto);
           // console.log(newsAbstract);
           console.log(linkToFull);
       } //end for loop
