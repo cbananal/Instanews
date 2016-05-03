@@ -159,7 +159,7 @@ body a{
 
 footer {
   max-width: 100%;
-  padding: 0 40px;
+  padding: 10px 40px;
   height: 5vh;
   color: #c2c2c2;
 }
@@ -217,26 +217,27 @@ footer span {
 
 
 /*----------Desktop--------*/
-/*@media all and (min-width: 1000px) {
+@media all and (min-width: 1000px) {
     .wrapper {
       width: 95%;
-      margin-bottom: 80px;
       justify-content: flex-start;
     }
 
     .logo {
-      width: 25%;
-      align-content: center;
       text-align: left;
     }
 
     .logo img{
       width: auto;
+    }
 
+    .outer-square {
+      max-width: 25%;
+      flex: 1 0 25%;
     }
 
     footer {
       text-align: left;
-    }*/
+    }
 
 }
