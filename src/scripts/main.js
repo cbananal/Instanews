@@ -41,9 +41,9 @@ $(document).ready(function(){
 
           $('.news-container').append('<li class="outer-square" style="background-image: url(\'' + featuredPhoto + '\');"><a class="inner-square" href="' + linkToFull + '" target="_blank"><p>' + newsAbstract + '</p></a></li>');
 
-          console.log(featuredPhoto);
+          // console.log(featuredPhoto);
           // console.log(newsAbstract);
-          console.log(linkToFull);
+          // console.log(linkToFull);
       } //end for loop
 
     }); // end for done
