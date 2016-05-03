@@ -28,7 +28,6 @@ $(document).ready(function(){
 
       var nytData = data.results;
       // console.log(nytData);
-      // var featured = 0;
 
       nytData = nytData.filter(function (item){
         return item.multimedia.length > 0;
@@ -47,9 +46,6 @@ $(document).ready(function(){
       } //end for loop
 
     }); // end for done
-
-
-
 
   }); //end for event change
 
