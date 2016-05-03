@@ -72,14 +72,14 @@
 
 .inner-square {
   position: absolute;
-  top: 0;
-  bottom: 0;
+  /*top: 0;*/
+  bottom: -16px;
   left: 0;
   right: 0;
   text-align: center;
   /*Flex Parent to Center Text*/
   display: flex;
-  flex-wrap: row nowrap;
+  flex-flow: row nowrap;
   align-items: flex-end;
   justify-content: center;
 }
@@ -88,7 +88,7 @@
   background-color: #000;
   opacity: 0.7;
   text-align: left;
-  padding: 2px 8px;
+  padding: 10px;
 }
 
 
