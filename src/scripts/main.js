@@ -5,11 +5,12 @@ $(document).ready(function(){
   $('.section-options').change('option', function(){
 
     event.preventDefault();
+    $('.news-container').empty();
     $('.main-content').prepend('<img class="loader" src="src/images/ajax-loader.gif">');
 
     //Stores the value of the selected news section
-    var chosenSection = $(this).val();
-    // console.log(chosenSection);
+    var chosenSection = $('.section-options').val();
+    console.log(chosenSection);
 
     //Accessing NYT's JSON
     $.ajax({
