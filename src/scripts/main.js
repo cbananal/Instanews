@@ -6,6 +6,7 @@ $(document).ready(function(){
 
     event.preventDefault();
     $('.news-container').empty();
+    $('header').addClass('shrink');
     $('.main-content').prepend('<img class="loader" src="src/images/ajax-loader.gif">');
 
     //Stores the value of the selected news section

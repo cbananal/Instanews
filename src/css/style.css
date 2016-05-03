@@ -114,6 +114,14 @@ body a{
   /*background-color: green;*/
 }
 
+.shrink {
+  height: auto;
+  margin-top: 30px;
+}
+.shrink div img {
+  width: 50%;
+}
+
 .logo, .dropdown-area {
   width: auto;
   /*background-color: orange;*/
