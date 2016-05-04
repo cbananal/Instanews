@@ -8,4 +8,8 @@ Media Queries<Br>
 Javascript / jQuery<Br>
 AJAX / JSON<Br>
 Vagrant / Gulp<Br>
-Git
+Version Control (Git)
+<br>
+<br>
+<br>
+*Design comprehensive credited to RED Academy, Inc.
