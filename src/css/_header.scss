@@ -1,0 +1,67 @@
+.wrapper {
+  width: 80%;
+  height: 60vh;
+  margin: 120px auto 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include tablet-screen {
+    margin-top: 90px;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  @include desktop-screen {
+    width: 95%;
+    justify-content: flex-start;
+  }
+
+}
+
+.shrink {
+  height: auto;
+  margin-top: 30px;
+
+  div img {
+    width: 50%;
+
+    @include tablet-screen {
+      width: 30%;
+    }
+  }
+
+  @include tablet-screen {
+    margin-top: 20px;
+  }
+
+}
+
+.logo {
+  width: auto;
+
+  img {
+    width: auto;
+
+    @include tablet-screen {
+      width: 140px;
+    }
+
+    @include desktop-screen {
+      width: auto;
+    }
+  }
+
+  @include desktop-screen {
+    text-align: left;
+  }
+}
+
+.dropdown-area {
+  width: auto;
+
+  @include tablet-screen {
+    text-align: left;
+  };
+
+}

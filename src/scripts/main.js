@@ -7,7 +7,7 @@ $(document).ready(function(){
     event.preventDefault();
     $('.news-container').empty();
     $('header').addClass('shrink');
-    $('.main-content').prepend('<img class="loader" src="src/images/ajax-loader.gif">');
+    $('.main-content').prepend('<img class="loader" src="build/images/ajax-loader.gif">');
 
     //Stores the value of the selected news section
     var chosenSection = $('.section-options').val();
@@ -19,6 +19,7 @@ $(document).ready(function(){
     dataType: 'json',
     url: 'http://api.nytimes.com/svc/topstories/v1/' + chosenSection + '.json?api-key=aec1669aa8a794669db617e0711c0397:19:75124068'
     })
+
 
     //What to do upon API retrieval
     .done ( function(data) {
