@@ -5,13 +5,21 @@ $(document).ready(function(){
   $('.section-options').change('option', function(){
 
     event.preventDefault();
+
+    //Removes new from previously selected sections
     $('.news-container').empty();
+
+    //Resizes header
     $('header').addClass('shrink');
+
+    //Shows loader image
     $('.main-content').prepend('<img class="loader" src="build/images/ajax-loader.gif">');
+
 
     //Stores the value of the selected news section
     var chosenSection = $('.section-options').val();
     console.log(chosenSection);
+
 
     //Accessing NYT's JSON
     $.ajax({
@@ -19,7 +27,6 @@ $(document).ready(function(){
     dataType: 'json',
     url: 'http://api.nytimes.com/svc/topstories/v1/' + chosenSection + '.json?api-key=aec1669aa8a794669db617e0711c0397:19:75124068'
     })
-
 
     //What to do upon API retrieval
     .done ( function(data) {
