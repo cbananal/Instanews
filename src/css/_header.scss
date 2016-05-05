@@ -27,7 +27,7 @@ body {
   @include tablet-screen {
     margin-top: 90px;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   @include desktop-screen {
@@ -57,7 +57,7 @@ body {
 
 .logo {
   width: auto;
-
+  flex-basis: 40%;
   img {
     width: auto;
 
