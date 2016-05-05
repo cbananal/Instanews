@@ -47,17 +47,22 @@ $(document).ready(function(){
         }).splice (0,12);
       } // end if/else statement
 
+      var toAppend = '';
       for (var i = 0; i < nytData.length; i++) {
           var featuredPhoto = nytData[i].multimedia[4].url;
           var newsAbstract = nytData[i].abstract;
           var linkToFull = nytData[i].url;
 
-          $('.news-container').append('<li class="outer-square" style="background-image: url(\'' + featuredPhoto + '\');"><a class="inner-square" href="' + linkToFull + '" target="_blank"><p>' + newsAbstract + '</p></a></li>');
+          toAppend += '<li class="outer-square" style="background-image: url(\'' + featuredPhoto + '\');"><a class="inner-square" href="' + linkToFull + '" target="_blank"><p>' + newsAbstract + '</p></a></li>' ;
 
           // console.log(featuredPhoto);
           // console.log(newsAbstract);
           // console.log(linkToFull);
       } //end loop
+
+      // the append call can be outside of the loop by using the var toAppend, adding to it through each run of the each loop, the appending the whole thing at once. - Sara
+
+      $('.news-container').append(toAppend);
 
     }); // end done
 
