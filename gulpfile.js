@@ -11,7 +11,7 @@ gulp.task('default', ['uglify', 'scss', 'js', 'browser-sync']);
 gulp.task('browser-sync', function() {
     browserSync.init({
         open: false,
-        proxy: 'http://192.168.33.10/Project02'
+        proxy: 'http://192.168.33.10/peer-review/Instanews-1'
     });
 
     gulp.watch('./src/scripts/*.js', ['uglify']);
