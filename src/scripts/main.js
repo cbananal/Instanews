@@ -5,13 +5,21 @@ $(document).ready(function(){
   $('.section-options').change('option', function(){
 
     event.preventDefault();
+
+    //Removes new from previously selected sections
     $('.news-container').empty();
+
+    //Resizes header
     $('header').addClass('shrink');
-    $('.main-content').prepend('<img class="loader" src="src/images/ajax-loader.gif">');
+
+    //Shows loader image
+    $('.main-content').prepend('<img class="loader" src="build/images/ajax-loader.gif">');
+
 
     //Stores the value of the selected news section
     var chosenSection = $('.section-options').val();
     console.log(chosenSection);
+
 
     //Accessing NYT's JSON
     $.ajax({

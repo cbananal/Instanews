@@ -1,0 +1,103 @@
+/*=================================*/
+/* Flex Hack: Proportional Scaling */
+/*=================================*/
+.outer-square {
+  position: relative;
+  flex: 0 1 50%;
+  background-position: center center;
+  background-size: cover;
+  height: 435px;
+
+  &:before {
+    content: "";
+    padding-top: 100%;
+    display: block;
+  }
+
+  @include tablet-screen {
+    max-width: 33.3%;
+    flex: 1 0 33.3%;
+  }
+
+  @include desktop-screen {
+    max-width: 25%;
+    flex: 1 0 25%;
+  }
+}
+
+.inner-square {
+  position: absolute;
+  /*top: 0;*/
+  bottom: -16px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  /*Flex Parent to Center Text*/
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  justify-content: center;
+
+  p {
+    background-color: $black;
+    opacity: 0.8;
+    text-align: left;
+    padding: 10px;
+  }
+
+  @include tablet-screen {
+    max-height: 450px;
+  };
+
+}
+
+
+/*===========================*/
+/*========Page Proper========*/
+/*===========================*/
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'open_sanslight', serif;
+  font-size: 1rem;
+  color: $white;
+  background-color: $black;
+  text-align: center;
+
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+
+}
+
+.loader{
+  width: 40px;
+  height: 40px;
+}
+
+.news-container {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  li {
+    list-style-type: none;
+  }
+
+  @include tablet-screen {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+}
+
+.no-news {
+  font-family: 'open_sanslight_italic', sans-serif;
+}

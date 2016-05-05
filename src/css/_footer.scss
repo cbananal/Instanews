@@ -1,0 +1,15 @@
+footer {
+  max-width: 100%;
+  padding: 10px 40px;
+  height: 5vh;
+  color: $grey;
+
+  span {
+    text-transform: uppercase;
+  }
+
+  @include desktop-screen {
+    text-align: left;
+  }
+  
+}
