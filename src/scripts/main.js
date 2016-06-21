@@ -15,11 +15,9 @@ $(document).ready(function(){
     //Shows loader image
     $('.main-content').prepend('<img class="loader" src="build/images/ajax-loader.gif">');
 
-
     //Stores the value of the selected news section
     var chosenSection = $('.section-options').val();
     console.log(chosenSection);
-
 
     //Accessing NYT's JSON
     $.ajax({
