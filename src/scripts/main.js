@@ -6,7 +6,7 @@ $(document).ready(function(){
 
     event.preventDefault();
 
-    //Removes new from previously selected sections
+    //Removes news from previously selected sections
     $('.news-container').empty();
 
     //Resizes header
@@ -36,7 +36,6 @@ $(document).ready(function(){
 
       //Gather data from NYT
       var nytData = data.results;
-      // console.log(nytData);
 
       //Filter data
       if (nytData.length === 0) {
@@ -54,13 +53,10 @@ $(document).ready(function(){
 
           $('.news-container').append('<li class="outer-square" style="background-image: url(\'' + featuredPhoto + '\');"><a class="inner-square" href="' + linkToFull + '" target="_blank"><p>' + newsAbstract + '</p></a></li>');
 
-          // console.log(featuredPhoto);
-          // console.log(newsAbstract);
-          // console.log(linkToFull);
       } //end loop
 
     }); // end done
 
   }); //end change event
 
-}); //end for documentready
+}); //end document ready
