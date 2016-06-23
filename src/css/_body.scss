@@ -39,7 +39,7 @@
   justify-content: center;
 
   p {
-    background-color: $black;
+    background-color: $background-color;
     opacity: 0.8;
     text-align: left;
     padding: 10px;
@@ -63,12 +63,12 @@ html {
 body {
   font-family: 'open_sanslight', serif;
   font-size: 1rem;
-  color: $white;
-  background-color: $black;
+  color: $default-text;
+  background-color: $background-color;
   text-align: center;
 
   a {
-    color: $white;
+    color: $default-text;
     text-decoration: none;
   }
 

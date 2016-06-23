@@ -2,7 +2,7 @@ footer {
   max-width: 100%;
   padding: 10px 40px;
   height: 5vh;
-  color: $grey;
+  color: $footer-text;
 
   span {
     text-transform: uppercase;
@@ -11,5 +11,5 @@ footer {
   @include desktop-screen {
     text-align: left;
   }
-  
+
 }
