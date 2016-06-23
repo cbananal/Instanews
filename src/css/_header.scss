@@ -1,3 +1,21 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'open_sanslight', serif;
+  font-size: 1rem;
+  color: $main-text;
+  background-color: $background-color;
+  text-align: center;
+
+  a {
+    color: $main-text;
+    text-decoration: none;
+  }
+
+}
+
 .wrapper {
   width: 80%;
   height: 60vh;
@@ -9,7 +27,7 @@
   @include tablet-screen {
     margin-top: 90px;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   @include desktop-screen {
@@ -39,7 +57,7 @@
 
 .logo {
   width: auto;
-
+  flex-basis: 40%;
   img {
     width: auto;
 

@@ -6,10 +6,13 @@ var sass = require('gulp-sass');
 
 gulp.task('default', ['uglify', 'browser-sync']);
 gulp.task('browser-sync', function() {
+
+
   browserSync.init ({
     open: false,
     proxy: '192.168.33.10/Project02'
   });
+
 
 
 // Watch tasks
