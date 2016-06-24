@@ -17,7 +17,6 @@ $(document).ready(function(){
 
     //Stores the value of the selected news section
     var chosenSection = $('.section-options').val();
-    console.log(chosenSection);
 
     //Accessing NYT's JSON
     $.ajax({
