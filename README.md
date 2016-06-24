@@ -16,5 +16,7 @@ This was a challenging project as it was the very first time I learned about Aja
 
 With this project, we were also introduced to SASS, dev environments, task runners and version control. I didn't know that side of coding/programming before and it was really nice and interesting to step up and use these working aids.
 
+Beyond that, we were also tasked for the first time to critique the code of a classmate and give feedback. It was a good alternative to learning how to read other people's code and getting around Github (i.e. forking, opening issues, creating pull requests, etc.).
+
 
 **Design comprehensive credited to RED Academy, Inc.*
