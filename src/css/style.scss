@@ -1,8 +1,9 @@
 @import 'normalize';
 @import 'fonts';
 @import 'variables';
-@import 'mediaqueries';
+@import 'media-queries';
 
-@import 'header';
+@import 'general';
+@import 'header-navigation';
 @import 'body';
 @import 'footer';
