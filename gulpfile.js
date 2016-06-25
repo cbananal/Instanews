@@ -29,5 +29,5 @@ gulp.task('sass', function(){
 gulp.task('uglify', function(){
   return gulp.src('./src/**/*.js') // What files gulp will consume
   .pipe(uglify()) // Call the uglify function on these files
-  .pipe(gulp.dest('./build/')) // Where to put the result
+  .pipe(gulp.dest('./build')) // Where to put the result
 });

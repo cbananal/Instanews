@@ -487,39 +487,52 @@ table {
   align-items: center; }
   @media all and (min-width: 600px) {
     .wrapper {
+      width: 65%;
       margin-top: 90px;
-      flex-direction: row;
-      justify-content: flex-start; } }
+      flex-direction: row; } }
   @media all and (min-width: 1000px) {
     .wrapper {
       width: 95%;
       justify-content: flex-start; } }
 
 .shrink {
+  width: 90%;
   height: auto;
   margin-top: 30px; }
-  .shrink div img {
-    width: 50%; }
-    @media all and (min-width: 600px) {
-      .shrink div img {
-        width: 30%; } }
   @media all and (min-width: 600px) {
     .shrink {
       margin-top: 20px; } }
+  @media all and (min-width: 1000px) {
+    .shrink {
+      width: 100%; } }
+  @media all and (min-width: 1000px) {
+    .shrink .logo {
+      margin-right: 0; } }
+  .shrink .logo img {
+    width: 65%; }
+    @media all and (min-width: 600px) {
+      .shrink .logo img {
+        width: 30%; } }
 
 .logo {
-  width: auto; }
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: baseline; }
+  @media all and (min-width: 1000px) {
+    .logo {
+      margin-right: 5%;
+      text-align: left; } }
   .logo img {
     width: auto; }
     @media all and (min-width: 600px) {
       .logo img {
-        width: 140px; } }
+        width: 80%;
+        height: auto; } }
     @media all and (min-width: 1000px) {
       .logo img {
         width: auto; } }
-  @media all and (min-width: 1000px) {
-    .logo {
-      text-align: left; } }
 
 .dropdown-area {
   width: auto; }

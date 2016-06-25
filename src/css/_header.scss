@@ -5,63 +5,66 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   @include tablet-screen {
+    width: 65%;
     margin-top: 90px;
     flex-direction: row;
-    justify-content: flex-start;
   }
-
   @include desktop-screen {
     width: 95%;
     justify-content: flex-start;
   }
-
 }
 
+//Added to the DOM upon selection of news category (Header Shrinks)
 .shrink {
+  width: 90%;
   height: auto;
   margin-top: 30px;
-
-  div img {
-    width: 50%;
-
-    @include tablet-screen {
-      width: 30%;
-    }
-  }
-
   @include tablet-screen {
     margin-top: 20px;
   }
-
+  @include desktop-screen {
+    width: 100%;
+  }
+  .logo {
+    @include desktop-screen {
+      margin-right: 0;
+    }
+    img {
+      width: 65%;
+      @include tablet-screen {
+        width: 30%;
+      }
+    }
+  }
 }
 
 .logo {
   width: auto;
-
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  @include desktop-screen {
+    margin-right: 5%;
+    text-align: left;
+  }
   img {
     width: auto;
-
     @include tablet-screen {
-      width: 140px;
+      width: 80%;
+      height: auto;
     }
-
     @include desktop-screen {
       width: auto;
     }
-  }
-
-  @include desktop-screen {
-    text-align: left;
   }
 }
 
 .dropdown-area {
   width: auto;
-
   @include tablet-screen {
     text-align: left;
   }
-
 }
