@@ -7,18 +7,15 @@
   background-position: center center;
   background-size: cover;
   height: 435px;
-
   &:before {
     content: "";
     padding-top: 100%;
     display: block;
   }
-
   @include tablet-screen {
     max-width: 33.3%;
     flex: 1 0 33.3%;
   }
-
   @include desktop-screen {
     max-width: 25%;
     flex: 1 0 25%;
@@ -27,28 +24,23 @@
 
 .inner-square {
   position: absolute;
-  /*top: 0;*/
   bottom: -16px;
   left: 0;
   right: 0;
   text-align: center;
-  /*Flex Parent to Center Text*/
-  display: flex;
+  display: flex; //to center text
   flex-flow: row nowrap;
   align-items: flex-end;
   justify-content: center;
-
   p {
     background-color: $background-color;
     opacity: 0.8;
     text-align: left;
     padding: 10px;
   }
-
   @include tablet-screen {
     max-height: 450px;
-  };
-
+  }
 }
 
 
@@ -66,12 +58,10 @@ body {
   color: $default-text;
   background-color: $background-color;
   text-align: center;
-
   a {
     color: $default-text;
     text-decoration: none;
   }
-
 }
 
 .loader{
@@ -85,17 +75,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   li {
     list-style-type: none;
   }
-
   @include tablet-screen {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
   }
-
 }
 
 .no-news {

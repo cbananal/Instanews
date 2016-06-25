@@ -522,8 +522,7 @@ table {
   align-items: baseline; }
   @media all and (min-width: 1000px) {
     .logo {
-      margin-right: 5%;
-      text-align: left; } }
+      margin-right: 5%; } }
   .logo img {
     width: auto; }
     @media all and (min-width: 600px) {
@@ -564,12 +563,10 @@ table {
 
 .inner-square {
   position: absolute;
-  /*top: 0;*/
   bottom: -16px;
   left: 0;
   right: 0;
   text-align: center;
-  /*Flex Parent to Center Text*/
   display: flex;
   flex-flow: row nowrap;
   align-items: flex-end;
