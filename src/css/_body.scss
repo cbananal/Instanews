@@ -31,11 +31,11 @@
 /*-------------- Flex Hack: Proportional Scaling -----------*/
 
 .outer-square {
-  position: relative;
-  flex: 0 1 50%;
+  height: 435px;
   background-position: center center;
   background-size: cover;
-  height: 435px;
+  position: relative;
+  flex: 0 1 50%;
   &:before {
     content: "";
     padding-top: 100%;
@@ -52,21 +52,14 @@
 }
 
 .inner-square {
+  padding: 0 15px;
+  text-align: left;
+  background-color: rgba(0,0,0,0.7);
   position: absolute;
-  bottom: -16px;
+  bottom: 0;
   left: 0;
   right: 0;
-  text-align: center;
-  display: flex; //to center text
-  flex-flow: row nowrap;
-  align-items: flex-end;
-  justify-content: center;
-  p {
-    background-color: $background-color;
-    opacity: 0.8;
-    text-align: left;
-    padding: 10px;
-  }
+  overflow: hidden;
   @include tablet-screen {
     max-height: 450px;
   }

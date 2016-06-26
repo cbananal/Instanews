@@ -478,111 +478,6 @@ table {
   font-weight: normal;
   font-style: normal; }
 
-.wrapper {
-  width: 80%;
-  height: 60vh;
-  margin: 120px auto 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  @media all and (min-width: 600px) {
-    .wrapper {
-      width: 65%;
-      margin-top: 90px;
-      flex-direction: row; } }
-  @media all and (min-width: 1000px) {
-    .wrapper {
-      width: 95%;
-      justify-content: flex-start; } }
-
-.shrink {
-  width: 90%;
-  height: auto;
-  margin-top: 30px; }
-  @media all and (min-width: 600px) {
-    .shrink {
-      margin-top: 20px; } }
-  @media all and (min-width: 1000px) {
-    .shrink {
-      width: 100%; } }
-  @media all and (min-width: 1000px) {
-    .shrink .logo {
-      margin-right: 0; } }
-  .shrink .logo img {
-    width: 65%; }
-    @media all and (min-width: 600px) {
-      .shrink .logo img {
-        width: 30%; } }
-
-.logo {
-  width: auto;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: baseline; }
-  @media all and (min-width: 1000px) {
-    .logo {
-      margin-right: 5%; } }
-  .logo img {
-    width: auto; }
-    @media all and (min-width: 600px) {
-      .logo img {
-        width: 80%;
-        height: auto; } }
-    @media all and (min-width: 1000px) {
-      .logo img {
-        width: auto; } }
-
-.dropdown-area {
-  width: auto; }
-  @media all and (min-width: 600px) {
-    .dropdown-area {
-      text-align: left; } }
-
-/*=================================*/
-/* Flex Hack: Proportional Scaling */
-/*=================================*/
-.outer-square {
-  position: relative;
-  flex: 0 1 50%;
-  background-position: center center;
-  background-size: cover;
-  height: 435px; }
-  .outer-square:before {
-    content: "";
-    padding-top: 100%;
-    display: block; }
-  @media all and (min-width: 600px) {
-    .outer-square {
-      max-width: 33.3%;
-      flex: 1 0 33.3%; } }
-  @media all and (min-width: 1000px) {
-    .outer-square {
-      max-width: 25%;
-      flex: 1 0 25%; } }
-
-.inner-square {
-  position: absolute;
-  bottom: -16px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: flex-end;
-  justify-content: center; }
-  .inner-square p {
-    background-color: #000;
-    opacity: 0.8;
-    text-align: left;
-    padding: 10px; }
-  @media all and (min-width: 600px) {
-    .inner-square {
-      max-height: 450px; } }
-
-/*===========================*/
-/*========Page Proper========*/
-/*===========================*/
 html {
   font-size: 16px; }
 
@@ -596,6 +491,70 @@ body {
     color: #fff;
     text-decoration: none; }
 
+.wrapper {
+  width: 80%;
+  height: 60vh;
+  margin: 120px auto 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media (min-width: 600px) {
+    .wrapper {
+      width: 65%;
+      margin-top: 90px;
+      flex-direction: row; } }
+  @media (min-width: 1000px) {
+    .wrapper {
+      width: 95%;
+      justify-content: flex-start; } }
+
+.shrink {
+  width: 90%;
+  height: auto;
+  margin-top: 30px; }
+  @media (min-width: 600px) {
+    .shrink {
+      margin-top: 20px; } }
+  @media (min-width: 1000px) {
+    .shrink {
+      width: 100%; } }
+  @media (min-width: 1000px) {
+    .shrink .logo {
+      margin-right: 0; } }
+  .shrink .logo img {
+    width: 65%; }
+    @media (min-width: 600px) {
+      .shrink .logo img {
+        width: 30%; } }
+
+.logo {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: baseline; }
+  @media (min-width: 1000px) {
+    .logo {
+      margin-right: 5%; } }
+  .logo img {
+    width: auto; }
+    @media (min-width: 600px) {
+      .logo img {
+        width: 80%;
+        height: auto; } }
+    @media (min-width: 1000px) {
+      .logo img {
+        width: auto; } }
+
+.dropdown-area {
+  width: auto; }
+  @media (min-width: 600px) {
+    .dropdown-area {
+      text-align: left; } }
+
+/*===========================*/
+/*========Page Proper========*/
+/*===========================*/
 .loader {
   width: 40px;
   height: 40px; }
@@ -608,7 +567,7 @@ body {
   justify-content: center; }
   .news-container li {
     list-style-type: none; }
-  @media all and (min-width: 600px) {
+  @media (min-width: 600px) {
     .news-container {
       flex-direction: row;
       flex-wrap: wrap;
@@ -617,6 +576,39 @@ body {
 .no-news {
   font-family: 'open_sanslight_italic', sans-serif; }
 
+/*-------------- Flex Hack: Proportional Scaling -----------*/
+.outer-square {
+  height: 435px;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  flex: 0 1 50%; }
+  .outer-square:before {
+    content: "";
+    padding-top: 100%;
+    display: block; }
+  @media (min-width: 600px) {
+    .outer-square {
+      max-width: 33.3%;
+      flex: 1 0 33.3%; } }
+  @media (min-width: 1000px) {
+    .outer-square {
+      max-width: 25%;
+      flex: 1 0 25%; } }
+
+.inner-square {
+  padding: 0 15px;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden; }
+  @media (min-width: 600px) {
+    .inner-square {
+      max-height: 450px; } }
+
 footer {
   max-width: 100%;
   padding: 10px 40px;
@@ -624,6 +616,6 @@ footer {
   color: #c2c2c2; }
   footer span {
     text-transform: uppercase; }
-  @media all and (min-width: 1000px) {
+  @media (min-width: 1000px) {
     footer {
       text-align: left; } }
