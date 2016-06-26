@@ -597,7 +597,8 @@ body {
       flex: 1 0 25%; } }
 
 .inner-square {
-  padding: 0 15px;
+  margin: 0;
+  padding: 10px;
   text-align: left;
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
